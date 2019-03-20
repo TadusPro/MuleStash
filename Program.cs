@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             Mulestash mulestash = new Mulestash();
-            System.Console.ReadLine();
+            mulestash.RegisterMule();
+            System.Console.ReadKey();
         }
     }
 }
