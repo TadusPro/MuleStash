@@ -12,5 +12,11 @@ namespace MuleStash
         {
             return "name: " + name + " email: " + guid + " password: " + password;
         }
+
+        public string ToMuledump()
+        {
+            return "\"" + guid + "\":\"" + password + "\",";
+        }
+
     }
 }
