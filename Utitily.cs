@@ -9,15 +9,44 @@ namespace MuleStash
     {
         public static string WebGetRequest(string url)
         {
-            var request = (HttpWebRequest)WebRequest.Create(url);
-            var responsestream = (HttpWebResponse)request.GetResponse();
-            return new StreamReader(responsestream.GetResponseStream()).ReadToEnd();
+            HttpRequest request = null;
+            try
+            {
+                request = new HttpRequest();
+                string html = request.Get(url).ToString();
+                return html;
+            }
+            catch (Exception ex)
+            {
+                // Error handling
+                return "FAIL";
+            }
+            finally
+            {
+                // Cleanup in the end if initialized
+                request?.Dispose();
+            }
         }
         public static string WebPostRequest(string url, string data)
         {
-            var request = (HttpWebRequest)WebRequest.Create(url);
-            var responsestream = (HttpWebResponse)request.GetResponse();
-            return new StreamReader(responsestream.GetResponseStream()).ReadToEnd();
+            HttpRequest request = null;
+            try
+            {
+                request = new HttpRequest();
+                string html = request.Get(url).ToString();
+                return html;
+            }
+            catch (Exception ex)
+            {
+                // Error handling
+                return "FAIL";
+            }
+            finally
+            {
+                // Cleanup in the end if initialized
+                request?.Dispose();
+            }
+            
         }
         public static string RandomString(int length)
         {
