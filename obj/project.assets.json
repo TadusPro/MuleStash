@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Leaf.xNet/5.1.65": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.2/Leaf.xNet.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/Leaf.xNet.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -211,6 +220,31 @@
     }
   },
   "libraries": {
+    "Leaf.xNet/5.1.65": {
+      "sha512": "eya1eG2i7UtIamDoZEZgdpGyQPOUSuY/2m50jP21bOGJx/SsbsYPo+BrKUDFzsZepMr+RxnRCQAjZfMpqoDcPg==",
+      "type": "package",
+      "path": "leaf.xnet/5.1.65",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "leaf.xnet.5.1.65.nupkg.sha512",
+        "leaf.xnet.nuspec",
+        "lib/net452/Leaf.xNet.dll",
+        "lib/net452/Leaf.xNet.xml",
+        "lib/net462/Leaf.xNet.dll",
+        "lib/net462/Leaf.xNet.xml",
+        "lib/net471/Leaf.xNet.dll",
+        "lib/net471/Leaf.xNet.xml",
+        "lib/net472/Leaf.xNet.dll",
+        "lib/net472/Leaf.xNet.xml",
+        "lib/netcoreapp2.0/Leaf.xNet.dll",
+        "lib/netcoreapp2.0/Leaf.xNet.xml",
+        "lib/netcoreapp2.1/Leaf.xNet.dll",
+        "lib/netcoreapp2.1/Leaf.xNet.xml",
+        "lib/netcoreapp2.2/Leaf.xNet.dll",
+        "lib/netcoreapp2.2/Leaf.xNet.xml"
+      ]
+    },
     "Microsoft.NETCore.App/2.2.0": {
       "sha512": "QU8taCyeyePwatrj+h+750lMnsPCq3YPaGmsdtSHXPCjDyjto2KT7QDNVet0oRliX4PjaINpyg0Yzd9DnQ/Wkw==",
       "type": "package",
@@ -682,6 +716,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Leaf.xNet >= 5.1.65",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
@@ -726,6 +761,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "Leaf.xNet": {
+            "target": "Package",
+            "version": "[5.1.65, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
