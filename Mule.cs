@@ -11,6 +11,13 @@ namespace MuleStash
         public Chest[] chest;
         public DateTime lastUpdate;
         public bool valid;
+
+        public Mule(string guid, string password)
+        {
+            this.guid = guid;
+            this.password = password;
+        }
+
         public override string ToString()
         {
             return "name: " + name + " email: " + guid + " password: " + password;
