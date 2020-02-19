@@ -8,6 +8,7 @@ namespace MuleStash
 {
     class Mulestash
     {
+        public Mule[] mules;
         private void OnStartup()
         {
 
