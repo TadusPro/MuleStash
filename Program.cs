@@ -6,7 +6,7 @@
         {
             Mulestash mulestash = new Mulestash();
             while (true){
-                mulestash.RegisterMule();
+                
             }
         }
     }
