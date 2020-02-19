@@ -8,10 +8,13 @@ namespace MuleStash
 {
     class Mulestash
     {
-
-        public Mulestash()
+        private void OnStartup()
         {
 
+        }
+        public Mulestash()
+        {
+            this.OnStartup();
 
         }
 
