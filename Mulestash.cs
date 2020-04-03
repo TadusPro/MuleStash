@@ -35,7 +35,7 @@ namespace MuleStash
 
                 else
                 {
-                    Console.WriteLine("No command found, type help for commands");
+                    Console.WriteLine("No command found, type help for commands..");
                 }
                     
             }
